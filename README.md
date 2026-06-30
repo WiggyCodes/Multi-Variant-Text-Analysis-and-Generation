@@ -14,20 +14,24 @@ This project implements and compares three distinct NLP architectures on the Rot
 | Text-GAN | Adversarial Text Generation | Custom LSTM + 1D-CNN |
 
 ## Dataset
-[Rotten Tomatoes - Hugging Face](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes)
+[Rotten Tomatoes on Hugging Face](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes/tree/main)
+
+See [DATASET.md](DATASET.md) for source details and local parquet file descriptions.
 
 ## How to Run
 1. Clone this repository
 2. Install dependencies:
-   \\\ash
+   ```bash
    pip install torch transformers datasets pyarrow pandas scikit-learn evaluate rouge-score nltk accelerate
-   \\\`n3. Open \Multi_Variant_Text_Analysis_and_Generation.ipynb\ in Jupyter or Google Colab
+   ```
+3. Open `Multi_Variant_Text_Analysis_and_Generation.ipynb` in Jupyter or Google Colab
 4. Run all cells
 
 ## Files
-- \Multi_Variant_Text_Analysis_and_Generation.ipynb\ - Main notebook with all three model pipelines
-- \project_documentation.pdf\ - Full project documentation and analysis report
-- \	rain.parquet\ / \alidation.parquet\ / \	est.parquet\ - Dataset splits
+- `Multi_Variant_Text_Analysis_and_Generation.ipynb` - Main notebook with all three model pipelines
+- `CapuzIvan_NLP.pdf` - Full project documentation and analysis report
+- `DATASET.md` - Dataset source link and file descriptions
+- `train.parquet` / `validation.parquet` / `test.parquet` - Dataset splits from [Hugging Face](https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes/tree/main)
 
 ## Evaluation Metrics
 - **BERT**: Precision, Recall, F1-Score
