@@ -1,9 +1,5 @@
 # Multi-Variant Text Analysis and Generation
 
-**Group 20**
-- James Luigi C. Capuz
-- Julian Ivan S. De Guzman
-
 ## Overview
 This project implements and compares three distinct NLP architectures on the Rotten Tomatoes movie review dataset:
 
